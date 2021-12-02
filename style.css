@@ -1,0 +1,27 @@
+h1 {
+   text-align: center;}
+
+h2 {
+    text-align: center;}
+
+h3 {
+    text-align: center;}
+h4 {
+    font-display:bold;}
+
+h5 {
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+style, h6 {
+    color:orange;
+    font-size: large;
+    font-display: bold;}
+p  {
+    font-style: italic; }
+
+img [id='styledImage'] 
+    {width:500px}
+
+img {src=https://cdn-icons-png.flaticon.com/512/919/919826.png;
+ border-style: solid;
+    border-color:orange}

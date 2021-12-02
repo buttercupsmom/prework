@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html>
+    <link href='./style.css'
+    rel='stylesheet'>
 <head>
-    <title>Watch That Box</title>
-    <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+    <title>CSS Practice</title>
+    <!-- Link to your external CSS -->
+
 </head>
 <body>
 
-    <p>Press the buttons to change the box!</p>
+    <!-- Center -->
+    <h1>The Wonders of CSS!</h1>
 
-    <div id="box" style="height:150px; width:150px; background-color:orange; margin:25px"></div>
+    <hr>
 
-    <button id="growBtn">Grow</button>
-    <button id="blueBtn">Blue</button>
-    <button id="fadeBtn">Fade</button>
-    <button id="resetBtn">Reset</button>
+    <h2>Fun With Text!</h2>
 
-    <script type="text/javascript">
+    <!-- Change text color -->
+    <p style="color:red">This text is red.</p>
+    <p style="color:blue">This text is blue.</p>
+    <p style="color:green">This text is green.</p>
 
-        document.getElementById("growBtn").addEventListener("click", function(){ 
-            document.getElementById("box").style.height = "300px";
-        });
+    <!-- Change font-size -->
+    <p style=font-size:large>This text is BIG!</p>
+    <p style=font-size:small>this text is tiny...</p>
 
-        document.getElementById("blueBtn").addEventListener("click", function(){
-            document.getElementById("box").style.backgroundColor = "darkblue";
-        });
+    <!-- Center -->
+    <h3>~~This text is centered~~</h3>
 
-        document.getElementById("fadeBtn").addEventListener("click", function(){
-            document.getElementById("box").style.opacity = "0.5";
-        });
+    <!-- Bold -->
+    <h4>If we have something important to say, we can make it bold!</h4>
 
-        document.getElementById("resetBtn").addEventListener("click", function(){
-            document.getElementById("box").style.height = "150px"; 
-                document.getElementById("box").style.backgroundColor = "orange"; 
-                    document.getElementById("box").style.opacity = "1.0";
-        });
+    <!-- Change font -->
+    <h5>We can even change our font-family if we are feeling creative!</h5>
 
-    </script>
+    <!-- Multiple attributes -->
+    <h6 style=font-size:large; style=color:orange; style=font-style:bold;>"Try combining multiple attributes to make big, orange, bold text!"</h6>
+
+    <hr>
+    <!-- Classes -->
+    <p class="font-style"> We can also apply the same style to multiple HTML elements.</p>
+    <p class="font-style">Each one of these lines is within a different &ltp&gt tag, yet they all have the same styling.</p>
+    <p class="font-style">That's because they are all a part of the same CSS class!</p>
+    <p class="font-style">CSS classes let us define a style once and let us then apply it to multiple elements!</p>
+    <p class="font-style">In your external CSS file, create a style for the class styledFont.</p>
+    <p class="font-style">Notice how every time you change the class styledFont, all of the text changes.</p>
+
+    <hr>
+
+    <p>Just as classes can be used to style multiple elements, id's are used to style single, unique elements. Give the following image a border by adding style attributes to your external CSS file. (Hint: Remember to include a border width, style, and color.)</p>
+
+    <!-- Border & id -->
+    <body>
+     <img id='styledImage' width="500px" alt='Picture of the CSS Icon' src='https://cdn-icons-png.flaticon.com/512/919/919826.png' border-color="orange"; border-style="solid"/>
+
+    <hr>
+
 </body>
 </html>
